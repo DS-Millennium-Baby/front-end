@@ -55,6 +55,7 @@
             android:backgroundTint="#ffffffff"
             android:src="@drawable/ic_mypage"/>
     </LinearLayout>
-
-
 </LinearLayout>
+
+
+
