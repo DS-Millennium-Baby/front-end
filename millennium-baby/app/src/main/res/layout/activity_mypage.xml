@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MypageActivity">
 
     <!--Scroll View-->
     <ScrollView
@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="main" />
+                android:text="mypage" />
 
         </LinearLayout>
     </ScrollView>
@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:layout_height="60dp"
             android:backgroundTint="#ffffffff"
-            android:src="@drawable/ic_home_sel"/>
+            android:src="@drawable/ic_home"/>
 
         <ImageButton
             android:id="@+id/nav_list"
@@ -53,8 +53,6 @@
             android:layout_weight="1"
             android:layout_height="60dp"
             android:backgroundTint="#ffffffff"
-            android:src="@drawable/ic_mypage"/>
+            android:src="@drawable/ic_mypage_sel"/>
     </LinearLayout>
-
-
 </LinearLayout>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Millenniumbaby">
         <activity
+            android:name=".MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListMajorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
