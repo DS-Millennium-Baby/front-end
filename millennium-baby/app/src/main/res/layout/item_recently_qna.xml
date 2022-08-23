@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_recently_qna_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/DBrown"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="5dp">
+
+
+    <TextView
+        android:id="@+id/item_recently_qna_major1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제 1전공"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/MBrown"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/item_recently_qna_major_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/MBrown"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/item_recently_qna_major2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제 2전공"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/MBrown"/>
+
+    </LinearLayout>
+
+</LinearLayout>
