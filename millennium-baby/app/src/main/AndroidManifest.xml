@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Millenniumbaby">
         <activity
+            android:name=".MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListMajorActivity"
             android:name=".MajorMainActivity"
             android:exported="false" />
         <activity
