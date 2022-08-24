@@ -16,6 +16,9 @@
             android:name=".QuestionListActivity"
             android:exported="false" />
         <activity
+            android:name=".WritingQuestionActivity"
+            android:exported="false" />
+        <activity
             android:name=".MypageActivity"
             android:exported="false" />
         <activity
