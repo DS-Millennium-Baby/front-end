@@ -4,6 +4,6 @@
     >
     <solid android:color="@color/DSalgoo"/>
     <corners
-        android:topLeftRadius="60dp"
-        android:topRightRadius="60dp"/>
+        android:topLeftRadius="80dp"
+        android:topRightRadius="80dp"/>
 </shape>

@@ -13,11 +13,12 @@
 
     <Button xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/major_head_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="60dp"
+        android:layout_marginRight="45dp"
         android:background="@drawable/major_head_btn"
         android:elevation="10dp"
         android:gravity="center_vertical"
@@ -39,66 +40,67 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/major_recently_background"
+                android:orientation="vertical">
+
                 <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:background="@drawable/major_recently_background">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/major_recently_qna"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="35dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:orientation="horizontal">
+                        android:layout_marginRight="10dp"
+                        android:text="질문과 답변"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/major_recently_qna"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="질문과 답변"
-                            android:textStyle="bold"
-                            android:layout_marginRight="10dp"
-                            android:textColor="@color/purple"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="|"
+                        android:textColor="@color/brown" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="|"
-                            android:layout_marginRight="10dp"
-                            android:textColor="@color/brown"/>
+                    <TextView
+                        android:id="@+id/major_recently_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="추천 TIPS"
+                        android:textColor="@color/brown" />
 
-                        <TextView
-                            android:id="@+id/major_recently_tips"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="추천 TIPS"
-                            android:textColor="@color/brown"/>
-
-                        <Button
-                            android:id="@+id/intoQnAPage"
-                            android:layout_width="45dp"
-                            android:layout_height="20dp"
-                            android:text="더보기"
-                            android:textStyle="bold"
-                            android:textColor="@color/DBrown"
-                            android:background="@color/MSalgoo"
-                            android:layout_marginLeft="65dp"/>
-
-                    </LinearLayout>
-
-                    <androidx.viewpager2.widget.ViewPager2
-                        android:id="@+id/major_head_qna"
-                        android:layout_width="260dp"
-                        android:layout_height="120dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/major_recently_background"></androidx.viewpager2.widget.ViewPager2>
-
+                    <Button
+                        android:id="@+id/intoQnAPage"
+                        android:layout_width="45dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="65dp"
+                        android:background="@color/MSalgoo"
+                        android:text="더보기"
+                        android:textColor="@color/DBrown"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/major_head_qna"
+                    android:layout_width="260dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/major_recently_background" />
+
+            </LinearLayout>
 
 
             <LinearLayout
@@ -107,100 +109,54 @@
                 android:background="@drawable/major_main_background"
                 android:orientation="vertical">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="50dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="50dp">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="학과 소개"
+                            android:textStyle="bold"
+                            android:textColor="@color/DBrown"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="165dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/purple_shape"/>
+                    </LinearLayout>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="13dp"
+                        android:text="별을 당신은 별 추억과 계집애들의 자랑처럼 쓸쓸함과 계십니다. 별이 아름다운 이국 애기 있습니다. 부끄러운 아스라히 별들을 별 시와 있습니다. 별 아이들의 보고, 아무 듯합니다. 풀이 책상을 시와 딴은 계십니다. 남은 별들을 지나가는 있습니다. 겨울이 이국 경, 별 슬퍼하는 버리었습니다. 딴은 이름과, 가슴속에 하나에 이름과, 봅니다. 당신은 소녀들의 말 옥 잔디가 계집애들의 밤이 있습니다.
+                        \n\n이 아름다운 청춘이 못 프랑시스 별 했던 듯합니다. 쉬이 아스라히 헤는 까닭입니다. 책상을 노루, 아무 나는 풀이 하늘에는 했던 어머니, 하나에 까닭입니다. 라이너 아침이 계절이 아직 내일 동경과 하나에 있습니다. 것은 마리아 별이 책상을 봅니다. 하나에 언덕 사람들의 릴케 한 쓸쓸함과 계십니다. 경, 봄이 쉬이 벌레는 지나가는 된 헤는 아스라히 멀듯이, 버리었습니다. 멀리 우는 이웃 흙으로 강아지, 마디씩 그러나 쓸쓸함과 추억과 있습니다. 쓸쓸함과 벌써 덮어 없이 아름다운 나의 거외다.
+                        \n\n차 별을 까닭이요, 별들을 써 나의 별 버리었습니다. 사랑과 하나에 아직 이름과, 옥 위에도 이 거외다. 하늘에는 그러나 지나고 시와 속의 아무 별 이웃 까닭입니다. 소녀들의 오면 시와 했던 있습니다. 어머니, 옥 봄이 나는 까닭입니다. 비둘기, 피어나듯이 차 봅니다. 아침이 사람들의 이름과, 하나에 위에 멀듯이, 말 자랑처럼 라이너 계십니다. 딴은 무엇인지 다 아이들의 까닭이요, 아침이 별 덮어 이름과, 봅니다. 이제 다 소학교 어머님, 이런 있습니다."/>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="안녕하세요"></Button>
+                </LinearLayout>
 
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
 
