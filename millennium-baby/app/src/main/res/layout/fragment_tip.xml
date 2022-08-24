@@ -4,7 +4,7 @@
     android:layout_width="300dp"
     android:layout_height="161dp"
     tools:context=".TipFragment"
-    android:background="@color/MSalgoo">
+    android:background="@drawable/major_recently_background">
 
 
     <LinearLayout
