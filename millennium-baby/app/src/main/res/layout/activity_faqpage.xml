@@ -1,9 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FAQPageActivity">
+    tools:context=".FAQPageActivity"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전공 선택"
+            android:textColor="@color/DBrown"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="53dp"
+            android:text="완벽 가이드"
+            android:textColor="@color/DBrown"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:text="질문이 많은 주제들을 모아 FAQ를 제공하고 있어요."
+        android:textColor="@color/brown"
+        android:textSize="13dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:clipToPadding="false">
+                <Button
+                    android:id="@+id/faq1_visiblebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_faq_btn"
+                    android:text="제 2전공이 무엇인가요?"
+                    android:textColor="@color/DBrown"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:elevation="10dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"
+                    android:drawableRight="@drawable/pink_shape"/>
+
+                <Button
+                    android:id="@+id/faq1_invisiblebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_faq_btn"
+                    android:text="무엇을 적어야 할까요.
+                    \n글을 등록하고 있어요.
+                    \n안녕하세요.
+                    \n내용이 길어야 해요.
+                    \n안녕하세요.
+                    \n안녕하세요."
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/DBrown"
+                    android:textSize="13dp"
+                    android:elevation="5dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:clipToPadding="false">
+
+                <Button
+                    android:id="@+id/faq2_visiblebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_faq_btn"
+                    android:text="어떤 기준으로 제 2전공을 골라야 할 지 모르겠어요."
+                    android:textColor="@color/DBrown"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:elevation="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"
+                    android:drawableLeft="@drawable/salgoo_shape"/>
+
+                <Button
+                    android:id="@+id/faq2_invisiblebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_faq_btn"
+                    android:text="무엇을 적어야 할까요.
+                    \n글을 등록하고 있어요.
+                    \n안녕하세요.
+                    \n내용이 길어야 해요.
+                    \n안녕하세요.
+                    \n안녕하세요."
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/DBrown"
+                    android:textSize="13dp"
+                    android:elevation="5dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:drawableLeft="@drawable/salgoo_shape"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:clipToPadding="false">
+                <Button
+                    android:id="@+id/faq3_visiblebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_faq_btn"
+                    android:text="이 버튼을 어떻게 만들어야 좋을까요?"
+                    android:textColor="@color/DBrown"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:elevation="5dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"
+                    android:drawableRight="@drawable/purple_shape"/>
+
+                <Button
+                    android:id="@+id/faq3_invisiblebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_faq_btn"
+                    android:text="이렇게 만들면.
+                    \n제목을 볼 수 없어요.
+                    \n안녕하세요.
+                    \n안녕하세요.
+                    \n안녕하세요.
+                    \n대신 내용을 늘려야 해요.
+                    \n길게 써야해요."
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/DBrown"
+                    android:textSize="13dp"
+                    android:elevation="5dp"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    android:drawableRight="@drawable/purple_shape"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+            </View>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
