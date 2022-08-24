@@ -93,10 +93,9 @@
                         android:id="@+id/major_head_qna"
                         android:layout_width="260dp"
                         android:layout_height="120dp"
-                        android:layout_marginTop="5dp"
                         android:layout_gravity="center_horizontal"
-                        android:background="@drawable/major_recently_background">
-                    </androidx.viewpager2.widget.ViewPager2>
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/major_recently_background"></androidx.viewpager2.widget.ViewPager2>
 
                 </LinearLayout>
 
