@@ -15,6 +15,7 @@ class QuestionListActivity : AppCompatActivity() {
         binding = ActivityQuestionListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         // 작성하기
         binding.listQueWriting.setOnClickListener {
             val intent = Intent(this, WritingQuestionActivity::class.java)
