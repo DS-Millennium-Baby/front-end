@@ -15,15 +15,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="main" />
             <Button
                 android:id="@+id/page_writing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="질문 작성 페이지" />
+            <Button
+                android:id="@+id/page_que_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질문 목록 페이지" />
 
         </LinearLayout>
     </ScrollView>
