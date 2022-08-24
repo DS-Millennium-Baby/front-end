@@ -33,6 +33,7 @@ class MajorMainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.majorHeadQna.adapter = viewPagerFragmentAdapter
+
     }
 
 }

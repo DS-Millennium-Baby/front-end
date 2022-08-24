@@ -4,8 +4,8 @@
     >
     <solid android:color="@color/MSalgoo"/>
     <corners
-        android:bottomLeftRadius="55dp"
-        android:bottomRightRadius="55dp"
-        android:topLeftRadius="55dp"
-        android:topRightRadius="55dp"/>
+        android:bottomLeftRadius="60dp"
+        android:bottomRightRadius="60dp"
+        android:topLeftRadius="60dp"
+        android:topRightRadius="60dp"/>
 </shape>
