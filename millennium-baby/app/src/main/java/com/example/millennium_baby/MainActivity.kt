@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, QuestionListActivity::class.java)
             startActivity(intent)
         }
+        binding.pageQueDetail.setOnClickListener {
+            val intent = Intent(this, QuestionDetailActivity::class.java)
+            startActivity(intent)
+        }
 
         // Bottom Bar
         binding.navHome.setOnClickListener{

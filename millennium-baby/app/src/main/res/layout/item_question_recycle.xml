@@ -4,8 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
     android:padding="15dp"
-    android:elevation="4dp"
-    android:background="@drawable/box_recycler_que"
+    android:background="@drawable/box_realwhite"
     android:layout_marginBottom="10dp"
     android:orientation="vertical">
     <LinearLayout
@@ -41,15 +40,18 @@
             android:id="@+id/item_que_firstmajor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/purple"
             android:text="제1전공" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/purple"
             android:text=" | " />
         <TextView
             android:id="@+id/item_que_secondmajor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/purple"
             android:text="제2전공" />
     </LinearLayout>
     <!--내용-->
