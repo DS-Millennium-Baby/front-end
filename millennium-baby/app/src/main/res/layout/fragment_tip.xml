@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260dp"
+    android:layout_height="120dp"
+    tools:context=".TipFragment"
+    android:background="@color/MSalgoo">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/major_recently"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_recently_tip"/>
+
+</FrameLayout>
