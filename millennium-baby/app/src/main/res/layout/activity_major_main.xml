@@ -62,7 +62,7 @@
                     <TextView
                         android:id="@+id/major_recently_qna"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="질문과 답변"
                         android:textColor="@color/purple"
@@ -96,6 +96,7 @@
 
 
                 <FrameLayout
+                    android:id="@+id/recently_major"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:context=".QnAFragment"
