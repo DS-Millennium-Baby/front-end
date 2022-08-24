@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+
+    tools:context=".QuestionListActivity">
+
+    <!--searchView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/box_wpink_radius"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NN전공"
+                android:textColor="@color/DBrown"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="에 대해 질문이 있어요!"
+                android:textColor="@color/DBrown"
+                android:textSize="18dp"/>
+            <Button
+                android:id="@+id/list_que_writing"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="질문하기"
+                android:textSize="14dp"
+                android:background="@drawable/box_purple"
+                android:backgroundTint="@color/purple"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/question_search"
+            app:queryHint="키워드를 입력하세요"
+            android:background="@drawable/box_realwhite"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--Chip-->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/question_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                app:singleLine="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_first_major"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:rippleColor="@color/peach"
+                    android:text="제1전공"
+                    app:checkedIconVisible="false"
+                    android:textColor="@color/DBrown"
+                    app:chipBackgroundColor="@color/chip_state_bg" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_second_major"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제2전공"
+                    android:textColor="@color/DBrown"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/chip_state_bg" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_score"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="학점"
+                    android:textColor="@color/DBrown"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/chip_state_bg" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_lecture"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="강의"
+                    android:textColor="@color/DBrown"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/chip_state_bg" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_study"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공부"
+                    android:textColor="@color/DBrown"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/chip_state_bg" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_etc"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타"
+                    android:textColor="@color/DBrown"
+                    app:checkedIconVisible="false"
+                    app:chipBackgroundColor="@color/chip_state_bg" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!--ListView-->
+
+    <TextView
+        android:id="@+id/no_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="검색한 결과가 없습니다." />
+
+    <!--리사이클러 뷰-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/question_search_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

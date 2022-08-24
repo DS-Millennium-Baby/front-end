@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WPink"
+    android:orientation="vertical"
+    tools:context=".WritingQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/btn_writing_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_dot_pink"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="뒤로가기"
+                    android:textFontWeight="700" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/writing_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textFontWeight="700"
+                android:text="NN전공"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="에 대해 질문이 있어요!"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="질문의 제목을 입력해주세요!"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"
+            android:elevation="4dp"
+            android:background="@drawable/box_realwhite"/>
+
+        <!--텍스트 위부터 작성하는 방법은?-->
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:hint="질문의 내용을 입력해주세요!"
+            android:layout_gravity="top"
+            android:textColor="@color/DBrown"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:background="@drawable/box_realwhite"/>
+
+        <!--카테고리-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="| 카테고리"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textFontWeight="700"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/writing_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_first_major"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rippleColor="@color/peach"
+                android:text="제1전공"
+                android:textColor="@color/DBrown"
+                app:chipBackgroundColor="@color/chip_state_bg" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_second_major"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="제2전공"
+                android:textColor="@color/DBrown"
+                app:chipBackgroundColor="@color/chip_state_bg" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_score"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학점"
+                android:textColor="@color/DBrown"
+                app:chipBackgroundColor="@color/chip_state_bg" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_lecture"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="강의"
+                android:textColor="@color/DBrown"
+                app:chipBackgroundColor="@color/chip_state_bg" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_study"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공부"
+                android:textColor="@color/DBrown"
+                app:chipBackgroundColor="@color/chip_state_bg" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_etc"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textColor="@color/DBrown"
+                app:chipBackgroundColor="@color/chip_state_bg" />
+        </com.google.android.material.chip.ChipGroup>
+        <Button
+            android:id="@+id/post_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingHorizontal="50dp"
+            android:textSize="20dp"
+            android:textFontWeight="700"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/box_purple"
+            android:text="글 작성하기" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

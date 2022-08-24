@@ -3,31 +3,17 @@ package com.example.millennium_baby
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.millennium_baby.databinding.ActivityMainBinding
+import com.example.millennium_baby.databinding.ActivityListMajorBinding
 
+class ListMajorActivity : AppCompatActivity() {
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
-    
+    lateinit var binding : ActivityListMajorBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityListMajorBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //test
-        binding.pageWriting.setOnClickListener {
-            val intent = Intent(this, WritingQuestionActivity::class.java)
-            startActivity(intent)
-        }
-        binding.pageQueList.setOnClickListener {
-            val intent = Intent(this, QuestionListActivity::class.java)
-            startActivity(intent)
-        }
-        binding.pageQueDetail.setOnClickListener {
-            val intent = Intent(this, QuestionDetailActivity::class.java)
-            startActivity(intent)
-        }
 
         // Bottom Bar
         binding.navHome.setOnClickListener{

@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Millenniumbaby">
         <activity
+            android:name=".MyQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WritingQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MypageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListMajorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MajorMainActivity"
             android:exported="false" />
         <activity
