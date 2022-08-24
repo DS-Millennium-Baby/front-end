@@ -22,6 +22,21 @@ class MypageActivity : AppCompatActivity() {
         val secondAdapter = ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerSecond.adapter = secondAdapter
 
+
+        // 내가 질문한 목록
+        binding.writingQuestion.setOnClickListener {
+            val intent = Intent(this, MyQuestionActivity::class.java)
+            intent.putExtra("page","writing")
+            startActivity(intent)
+        }
+
+        // 내가 답변한 질문 목록
+        binding.answerQuestion.setOnClickListener {
+            val intent = Intent(this, MyQuestionActivity::class.java)
+            intent.putExtra("page","answer")
+            startActivity(intent)
+        }
+
         // Bottom Bar
         binding.navHome.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
