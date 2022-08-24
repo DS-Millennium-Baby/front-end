@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.millennium_baby.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     
@@ -13,6 +14,16 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //test
+        binding.pageWriting.setOnClickListener {
+            val intent = Intent(this, WritingQuestionActivity::class.java)
+            startActivity(intent)
+        }
+        binding.pageQueList.setOnClickListener {
+            val intent = Intent(this, QuestionListActivity::class.java)
+            startActivity(intent)
+        }
 
         // Bottom Bar
         binding.navHome.setOnClickListener{
