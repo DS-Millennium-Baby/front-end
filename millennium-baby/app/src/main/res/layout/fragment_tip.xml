@@ -4,7 +4,7 @@
     android:layout_width="300dp"
     android:layout_height="161dp"
     tools:context=".TipFragment"
-    android:background="@color/white">
+    android:background="@color/MSalgoo">
 
 
     <LinearLayout
@@ -21,14 +21,14 @@
             android:layout_height="wrap_content"
             android:text="질문과 답변"
             android:layout_marginRight="10dp"
-            android:textColor="@color/DSalgoo"/>
+            android:textColor="@color/brown"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="|"
             android:layout_marginRight="10dp"
-            android:textColor="@color/DSalgoo"/>
+            android:textColor="@color/brown"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             android:text="더보기"
             android:textStyle="bold"
             android:textColor="@color/DBrown"
-            android:background="@color/white"
+            android:background="@color/MSalgoo"
             android:layout_marginLeft="65dp"/>
 
     </LinearLayout>

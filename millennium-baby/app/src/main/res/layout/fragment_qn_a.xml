@@ -4,7 +4,7 @@
     android:layout_width="300dp"
     android:layout_height="200dp"
     tools:context=".QnAFragment"
-    android:background="@color/white">
+    android:background="@color/MSalgoo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,21 +28,22 @@
             android:layout_height="wrap_content"
             android:text="|"
             android:layout_marginRight="10dp"
-            android:textColor="@color/DSalgoo"/>
+            android:textColor="@color/brown"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="추천 TIPS"
-            android:textColor="@color/DSalgoo"/>
+            android:textColor="@color/brown"/>
 
         <Button
+            android:id="@+id/intoQnAPage"
             android:layout_width="45dp"
             android:layout_height="20dp"
             android:text="더보기"
             android:textStyle="bold"
             android:textColor="@color/DBrown"
-            android:background="@color/white"
+            android:background="@color/MSalgoo"
             android:layout_marginLeft="65dp"/>
 
     </LinearLayout>
@@ -52,10 +53,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/item_recently_qna"/>
 
 
 
