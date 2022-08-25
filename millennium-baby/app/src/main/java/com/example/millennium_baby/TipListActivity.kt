@@ -13,7 +13,7 @@ class TipListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTipListBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_tip_list)
+        setContentView(binding.root)
 
         binding.listTipWriting.setOnClickListener {
             val intent = Intent(this, WritingTipActivity::class.java)
@@ -48,12 +48,12 @@ class TipListActivity : AppCompatActivity() {
     }
 
     private fun displayRecyclerView(data: MutableList<TipListItem>){
-        val searchAdapter =  TipListAdapter(this, data)
+        val TipsearchAdapter =  TipListAdapter(this, data)
         binding.tipSearchRecyclerView.layoutManager = LinearLayoutManager(this)
-        binding.tipSearchRecyclerView.adapter = searchAdapter // data array
+        binding.tipSearchRecyclerView.adapter = TipsearchAdapter // data array
 
         // 리사이클러뷰 이벤트 처리
-        searchAdapter.setItemClickListener(object: TipListAdapter.OnItemClickListener {
+        TipsearchAdapter.setItemClickListener(object: TipListAdapter.OnItemClickListener {
             override fun onClick(v: View, position: Int) {
                 val intent = Intent(baseContext, TipDetailActivity::class.java)
                 intent.putExtra("tip", "detailTip")

@@ -95,9 +95,9 @@ class MajorMainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.majorRecentlyTips.setTypeface(null, Typeface.BOLD)
                 binding.intoPage.setOnClickListener {
                     //팁 상세 페이지로 이동
-                    /*val intent = Intent(baseContext, MajorMainActivity::class.java)
+                    val intent = Intent(baseContext, TipListActivity::class.java)
                     intent.putExtra("major", "randomMajor")
-                    startActivity(intent)*/
+                    startActivity(intent)
                 }
                 transaction.replace(R.id.major_head, TipFragment())
                 transaction.commit()
