@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MajorMainActivity">
 
-<LinearLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="45dp"
@@ -30,7 +31,6 @@
         </TextView>
 
     </LinearLayout>
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -101,7 +101,6 @@
 
                 </LinearLayout>
 
-
                 <FrameLayout
                     android:id="@+id/major_head"
                     android:layout_width="match_parent"
@@ -112,7 +111,6 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@color/MSalgoo">
-
 
                 </FrameLayout>
 
