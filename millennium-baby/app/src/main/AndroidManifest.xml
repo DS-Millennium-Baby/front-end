@@ -34,6 +34,9 @@
             android:exported="false" />
 
         <activity
+            android:name=".MajorMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MyQuestionActivity"
             android:exported="false" />
         <activity
@@ -52,11 +55,15 @@
             android:name=".ListMajorActivity"
             android:exported="false" />
         <activity
-            android:name=".MajorMainActivity"
-            android:exported="false" />
-        <activity
             android:name=".FAQPageActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true">
+
+        </activity>
+
     </application>
 
 </manifest>

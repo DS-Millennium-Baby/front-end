@@ -84,7 +84,7 @@
         android:layout_marginBottom="142dp"
         android:background="@drawable/round_button"
         android:text="다음"
-        android:textColor="@color/black"
+        android:textColor="@color/DBrown"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
