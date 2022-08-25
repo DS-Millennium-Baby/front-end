@@ -25,7 +25,7 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -65,11 +65,14 @@
                     >
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/major_title_global"
+                        android:overScrollMode="never"
+                        android:nestedScrollingEnabled="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="15dp"
-                        tools:listitem="@layout/item_major_global">
+                        tools:listitem="@layout/item_majorlist">
 
                     </androidx.recyclerview.widget.RecyclerView>
 
@@ -99,19 +102,21 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/main_majorpage_btn"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
-                    android:padding="10dp"
-                    >
+                    android:background="@drawable/main_majorpage_btn"
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/major_title_science"
+                        android:overScrollMode="never"
+                        android:nestedScrollingEnabled="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="15dp"
-                        tools:listitem="@layout/item_major_science">
+                        tools:listitem="@layout/item_majorlist">
 
                     </androidx.recyclerview.widget.RecyclerView>
 
@@ -149,23 +154,22 @@
                     >
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/major_title_art"
+                        android:overScrollMode="never"
+                        android:nestedScrollingEnabled="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="15dp"
-                        tools:listitem="@layout/item_major_art">
+                        tools:listitem="@layout/item_majorlist">
 
                     </androidx.recyclerview.widget.RecyclerView>
                 </LinearLayout>
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="100dp"></View>
-
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
 
