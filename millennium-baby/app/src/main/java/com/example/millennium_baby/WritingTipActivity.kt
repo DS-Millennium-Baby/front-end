@@ -11,7 +11,7 @@ class WritingTipActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWritingTipBinding.inflate(layoutInflater)
 
-        setContentView(R.layout.activity_writing_tip)
+        setContentView(binding.root)
 
         //뒤로가기
         binding.btnWritingBack.setOnClickListener{

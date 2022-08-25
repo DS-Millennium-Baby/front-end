@@ -31,7 +31,7 @@ class TipListAdapter(val context: Context, val datas: MutableList<TipListActivit
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return datas?.size ?: 0
     }
 
     // (2) 리스너 인터페이스
