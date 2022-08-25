@@ -1,24 +1,24 @@
 package com.example.millennium_baby
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.millennium_baby.databinding.ItemRecentlyQnaBinding
+import com.example.millennium_baby.databinding.ItemRecentlyTipBinding
 
-class ItemViewHolder(val binding:ItemRecentlyQnaBinding): RecyclerView.ViewHolder(binding.root)
-class QnAAdapter (val fragment : QnAFragment, val datas : MutableList<QnAFragment.Data>?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class Item2ViewHolder(val binding: ItemRecentlyTipBinding): RecyclerView.ViewHolder(binding.root)
+class TipAdapter(val fragment : TipFragment, val datas : MutableList<TipFragment.Data>?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun getItemCount(): Int {
         return 3
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return ItemViewHolder(ItemRecentlyQnaBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return Item2ViewHolder(ItemRecentlyTipBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val binding = (holder as ItemViewHolder).binding
+        val binding = (holder as Item2ViewHolder).binding
         val model = datas!![position]
 
         binding.itemRecentlyQnaTitle.text = model.title
@@ -38,5 +38,4 @@ class QnAAdapter (val fragment : QnAFragment, val datas : MutableList<QnAFragmen
         this.itemClickListener = onItemClickListener
     }
     private lateinit var itemClickListener: OnItemClickListener
-
 }

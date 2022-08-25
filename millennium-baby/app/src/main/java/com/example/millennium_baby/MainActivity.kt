@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         binding.navList.setOnClickListener {
-            val intent = Intent(this, ListMajorActivity::class.java)
+            val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
             finish()
