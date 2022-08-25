@@ -57,6 +57,7 @@
                 android:animateLayoutChanges="true"
                 android:orientation="vertical"
                 android:clipToPadding="false">
+
                 <android.widget.Button
                     android:id="@+id/faq1_visiblebtn"
                     android:layout_width="match_parent"
@@ -66,18 +67,18 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/main_faq_btn"
-                    android:text="제 2전공이 무엇인가요?"
+                    android:gravity="left|center"
+                    android:text="복수전공과 차이가 궁금해요."
                     android:textColor="@color/DBrown"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     android:textStyle="bold"
-                    android:elevation="10dp"
-                    android:gravity="left"
+                    android:elevation="5dp"
                     android:paddingTop="10dp"
                     android:paddingLeft="10dp"
-                    android:paddingRight="15dp"
+                    android:paddingRight="10dp"
                     android:paddingBottom="10dp"
                     android:visibility="visible"
-                    android:drawableRight="@drawable/pink_shape"/>
+                    android:drawableLeft="@drawable/pink_shape"/>
 
                 <android.widget.Button
                     android:id="@+id/faq1_invisiblebtn"
@@ -88,12 +89,11 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/main_faq_btn"
-                    android:text="무엇을 적어야 할까요.
-                    \n글을 등록하고 있어요.
-                    \n안녕하세요.
-                    \n내용이 길어야 해요.
-                    \n안녕하세요.
-                    \n안녕하세요."
+                    android:text="복수전공의 경우
+                    \n제1전공 이수 후 졸업을 유보하고,
+                    \n또 하나의 전공을 이수해야 합니다.
+                    \n\n그와 달리 2전공의 경우
+                    \n제1전공과 동시에 이수할 수 있습니다."
                     android:textStyle="bold"
                     android:drawablePadding="10dp"
                     android:textColor="@color/DBrown"
@@ -104,7 +104,9 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:paddingBottom="10dp"
-                    android:visibility="gone"/>
+                    android:drawableLeft="@drawable/pink_shape"
+                    android:visibility="gone"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -123,7 +125,8 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/main_faq_btn"
-                    android:text="어떤 기준으로 제 2전공을 골라야 할 지 모르겠어요."
+                    android:gravity="left|center"
+                    android:text="제 2전공 인원 제한은 없는 건가요?"
                     android:textColor="@color/DBrown"
                     android:textSize="13dp"
                     android:textStyle="bold"
@@ -144,12 +147,10 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/main_faq_btn"
-                    android:text="무엇을 적어야 할까요.
-                    \n글을 등록하고 있어요.
-                    \n안녕하세요.
-                    \n내용이 길어야 해요.
-                    \n안녕하세요.
-                    \n안녕하세요."
+                    android:text="네.
+                    \n\n모집 인원이 정해져있는 제 1전공과 달리
+                    \n제 2전공에서는
+                    \n인원수의 제한을 따로 두지 않았습니다."
                     android:textStyle="bold"
                     android:drawablePadding="10dp"
                     android:textColor="@color/DBrown"
@@ -171,6 +172,7 @@
                 android:animateLayoutChanges="true"
                 android:orientation="vertical"
                 android:clipToPadding="false">
+
                 <android.widget.Button
                     android:id="@+id/faq3_visiblebtn"
                     android:layout_width="match_parent"
@@ -180,18 +182,18 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/main_faq_btn"
-                    android:text="이 버튼을 어떻게 만들어야 좋을까요?"
+                    android:gravity="left|center"
+                    android:text="비교과 활동 점수의 경우 300점까지만 인정되나요?"
                     android:textColor="@color/DBrown"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     android:textStyle="bold"
                     android:elevation="5dp"
-                    android:gravity="left"
                     android:paddingTop="10dp"
                     android:paddingLeft="10dp"
-                    android:paddingRight="15dp"
+                    android:paddingRight="10dp"
                     android:paddingBottom="10dp"
                     android:visibility="visible"
-                    android:drawableRight="@drawable/purple_shape"/>
+                    android:drawableLeft="@drawable/purple_shape"/>
 
                 <android.widget.Button
                     android:id="@+id/faq3_invisiblebtn"
@@ -202,13 +204,10 @@
                     android:layout_marginLeft="45dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/main_faq_btn"
-                    android:text="이렇게 만들면.
-                    \n제목을 볼 수 없어요.
-                    \n안녕하세요.
-                    \n안녕하세요.
-                    \n안녕하세요.
-                    \n대신 내용을 늘려야 해요.
-                    \n길게 써야해요."
+                    android:text="네.
+                    \n\n전공 선택 동점자 처리기준을 참고하시면
+                    \n최대 배점인 300점 이상 점수를 얻은 경우에도
+                    \n동일하게 300점으로 계산됩니다."
                     android:textStyle="bold"
                     android:drawablePadding="10dp"
                     android:textColor="@color/DBrown"
@@ -217,10 +216,11 @@
                     android:gravity="left"
                     android:paddingTop="10dp"
                     android:paddingLeft="10dp"
-                    android:paddingRight="15dp"
+                    android:paddingRight="10dp"
                     android:paddingBottom="10dp"
+                    android:drawableLeft="@drawable/purple_shape"
                     android:visibility="gone"
-                    android:drawableRight="@drawable/purple_shape"/>
+                    />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"

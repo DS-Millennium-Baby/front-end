@@ -29,7 +29,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MajorMainActivity"
+            android:name=".FAQPageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
             android:name=".RegisterFirstActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
+            android:name=".MajorMainActivity"
             android:exported="false" />
         <activity
             android:name=".MyQuestionActivity"
@@ -62,7 +62,7 @@
             android:name=".MypageActivity"
             android:exported="false" />
         <activity
-            android:name=".FAQPageActivity"
+            android:name=".StartActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
