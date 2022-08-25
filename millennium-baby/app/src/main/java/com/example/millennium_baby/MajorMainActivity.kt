@@ -18,6 +18,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.example.millennium_baby.databinding.ActivityMajorMainBinding
 
+
 import java.util.*
 
 
@@ -79,11 +80,7 @@ class MajorMainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.majorRecentlyQna.setTypeface(null, Typeface.BOLD)
                 binding.majorRecentlyTips.setTextColor(Color.parseColor("#A38376"))
                 binding.majorRecentlyTips.setTypeface(null, Typeface.NORMAL)
-                binding.intoPage.setOnClickListener {
-                    val intent = Intent(baseContext, QuestionListActivity::class.java)
-                    intent.putExtra("major", "randomMajor")
-                    startActivity(intent)
-                }
+
                 transaction.replace(R.id.major_head, QnAFragment())
                 transaction.commit()
             }
@@ -92,12 +89,7 @@ class MajorMainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.majorRecentlyQna.setTypeface(null, Typeface.NORMAL)
                 binding.majorRecentlyTips.setTextColor(Color.parseColor("#864355"))
                 binding.majorRecentlyTips.setTypeface(null, Typeface.BOLD)
-                binding.intoPage.setOnClickListener {
-                    //팁 상세 페이지로 이동
-                    /*val intent = Intent(baseContext, MajorMainActivity::class.java)
-                    intent.putExtra("major", "randomMajor")
-                    startActivity(intent)*/
-                }
+
                 transaction.replace(R.id.major_head, TipFragment())
                 transaction.commit()
             }

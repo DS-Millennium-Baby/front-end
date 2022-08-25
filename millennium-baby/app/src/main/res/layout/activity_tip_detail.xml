@@ -1,9 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TipDetailActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                    <!--뒤로가기 버튼-->
+                    <LinearLayout
+                        android:id="@+id/detail_btn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_dot_pink"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="뒤로가기"
+                            android:textFontWeight="700" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bell"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            <!--질문 상세 내용-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_realwhite"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="vertical">
+
+                <!--카테고리-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+                    <TextView
+                        android:id="@+id/detail_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/pink"
+                        android:text="#해시태그 #해시태그" />
+                    <TextView
+                        android:id="@+id/detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="시간" />
+                </LinearLayout>
+
+                <!--title-->
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="제목입니다."
+                    android:textSize="20dp"
+                    android:textColor="@color/DBrown"
+                    android:textFontWeight="700" />
+
+                <!--사용자 전공 정보-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp">
+                    <TextView
+                        android:id="@+id/item_tip_firstmajor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="제1전공" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text=" | " />
+                    <TextView
+                        android:id="@+id/item_tip_secondmajor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="제2전공" />
+                </LinearLayout>
+
+                <!--내용-->
+                <TextView
+                    android:id="@+id/detail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="내용입니다."
+                    android:textColor="@color/brown"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="| 답변"
+                android:textSize="20dp"
+                android:textColor="@color/DBrown"
+                android:textFontWeight="700"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <!--리사이클러 뷰-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/detail_tip_answer_recyclerView"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--답변 작성-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="| 답변 달기"
+                android:textSize="20dp"
+                android:textFontWeight="700"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/DBrown" />
+            <MultiAutoCompleteTextView
+                android:id="@+id/detail_writing_answer"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:background="@drawable/box_realwhite"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="4dp"
+                android:hint="답변을 작성주세요." />
+            <Button
+                android:id="@+id/detail_post_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="답변"
+                android:layout_marginHorizontal="16dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/box_purple"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

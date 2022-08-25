@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.millennium_baby">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,17 +10,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Millenniumbaby">
-        <activity android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+        android:theme="@style/Theme.Millenniumbaby"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".WritingTipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
-            android:exported="true" >
+            android:name=".MajorMainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,9 +42,8 @@
         <activity
             android:name=".RegisterFirstActivity"
             android:exported="false" />
-
         <activity
-            android:name=".MajorMainActivity"
+            android:name=".StartActivity"
             android:exported="false" />
         <activity
             android:name=".MyQuestionActivity"
@@ -54,13 +63,9 @@
         <activity
             android:name=".FAQPageActivity"
             android:exported="false" />
-
         <activity
             android:name=".MenuActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
     </application>
 
 </manifest>

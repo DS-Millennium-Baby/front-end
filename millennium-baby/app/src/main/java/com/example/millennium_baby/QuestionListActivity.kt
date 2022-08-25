@@ -43,6 +43,9 @@ class QuestionListActivity : AppCompatActivity() {
         // 리사이클러뷰 이벤트 처리
         searchAdapter.setItemClickListener(object: QuestionListAdapter.OnItemClickListener {
             override fun onClick(v: View, position: Int) {
+                val intent = Intent(baseContext, QuestionDetailActivity::class.java)
+                intent.putExtra("que", "detailQue")
+                startActivity(intent)
                 // 클릭 시 상세정보 페이지 이동
 //                binding.placeBottomSheetPlace.text = data.get(position).title
 //                binding.placeBottomSheetAddr.text = data.get(position).venue
