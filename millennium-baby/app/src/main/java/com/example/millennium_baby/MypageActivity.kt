@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -78,7 +79,7 @@ class MypageActivity : AppCompatActivity() {
             finish()
         }
         binding.navList.setOnClickListener{
-            val intent = Intent(this, ListMajorActivity::class.java)
+            val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
             finish()

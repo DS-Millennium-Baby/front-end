@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.millennium_baby.databinding.FragmentQnABinding
+import com.example.millennium_baby.databinding.FragmentTipBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +24,12 @@ class TipFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    //임의 데이터 추가를 위한 데이터 클래스
+    data class Data(val title : String, val major_1 : String, val major_2 : String)
+    var datas = mutableListOf<Data>()
+
+    lateinit var binding : FragmentTipBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,7 +43,22 @@ class TipFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tip, container, false)
+        binding = FragmentTipBinding.inflate(inflater, container, false)
+
+        addData()
+
+        binding.majorHeadItem.layoutManager = LinearLayoutManager(activity)
+        binding.majorHeadItem.adapter = TipAdapter(this, datas)
+
+        return binding.root
+    }
+
+    fun addData() : MutableList<TipFragment.Data>{
+        datas.add(TipFragment.Data("공부 같이 하실 분", "컴퓨터공학전공", "경영학전공"))
+        datas.add(TipFragment.Data("이 책을 추천합니다", "사회학전공", "사이버보안전공"))
+        datas.add(TipFragment.Data("소모임 인원 모집 중", "경영학전공", "사이버보안전공"))
+
+        return datas
     }
 
     companion object {

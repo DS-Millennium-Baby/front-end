@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="260dp"
-    android:layout_height="120dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".QnAFragment"
     android:background="@color/MSalgoo">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/major_recently"
+        android:id="@+id/major_head_item"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:listitem="@layout/item_recently_qna"/>
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_recently_qna">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>

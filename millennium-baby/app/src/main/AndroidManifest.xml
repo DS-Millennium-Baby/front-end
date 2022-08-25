@@ -52,9 +52,6 @@
             android:name=".MypageActivity"
             android:exported="false" />
         <activity
-            android:name=".ListMajorActivity"
-            android:exported="false" />
-        <activity
             android:name=".FAQPageActivity"
             android:exported="false" />
 
