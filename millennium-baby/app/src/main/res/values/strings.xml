@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">millennium-baby</string>
 
-    <string-array name = "spinner1">
+    <string-array name="spinner1">
         <item>선택해주세요.</item>
 
         <item>글로벌융합대학</item>
@@ -10,7 +10,7 @@
         <item>Art&amp;Design대학</item>
     </string-array>
 
-    <string-array name = "spinner2">
+    <string-array name="spinner2">
         <item>선택해주세요.</item>
 
         <item>1학년</item>
@@ -59,7 +59,7 @@
         <item>텍스타일디자인전공</item>
     </string-array>
 
-    <string-array name = "spinner3">
+    <string-array name="spinner3">
         <item>선택해주세요.</item>
 
         <item>아직 정하지 못했어요.</item>
@@ -69,7 +69,7 @@
         <item>Art&amp;Design대학</item>
     </string-array>
 
-    <string-array name = "spinner4">
+    <string-array name="spinner4">
         <item>선택해주세요.</item>
 
         <item>아직 정하지 못했어요.</item>
