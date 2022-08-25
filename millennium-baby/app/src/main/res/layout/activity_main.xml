@@ -49,7 +49,7 @@
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/goto_qna_write"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -173,7 +173,7 @@
 
             </LinearLayout>
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/goto_faq"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Button
+            <android.widget.Button
                 android:id="@+id/random"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
