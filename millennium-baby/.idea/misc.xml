@@ -22,8 +22,14 @@
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_faqpage.xml" value="0.176" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_list_major.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+<<<<<<< HEAD
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_main_page.xml" value="0.2" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_major_main.xml" value="0.264" />
+=======
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_main_page.xml" value="0.264" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_major_main.xml" value="0.264" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+>>>>>>> 4199e6b1c94dc0cc37f6ad8b8ec33aec6f7cc761
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_my_question.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_new1.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/activity_new2.xml" value="0.24947916666666667" />
@@ -32,8 +38,59 @@
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/fragment_major_main_tip.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/fragment_qn_a.xml" value="0.4" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/fragment_tip.xml" value="0.264" />
+<<<<<<< HEAD
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_recently_qna.xml" value="0.3892145369284877" />
         <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_recently_tip.xml" value="0.536" />
+=======
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_major_art.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_major_global.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_major_science.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_majorlist.xml" value="0.2" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_my_question.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_question_recycle.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_recently_qna.xml" value="0.3892145369284877" />
+        <entry key="..\:/Users/rlawl/Documents/AndroidProjects/front-end/millennium-baby/app/src/main/res/layout/item_recently_tip.xml" value="0.536" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_dsalggo.xml" value="0.153" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_dsalgoo.xml" value="0.116" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_gray.xml" value="0.153" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_grey.xml" value="0.116" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_msalgoo.xml" value="0.116" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_purple.xml" value="0.1885" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_realwhite.xml" value="0.1" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_recycler_que.xml" value="0.1" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_salgoo.xml" value="0.116" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_wpink.xml" value="0.1" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/box_wpink_radius.xml" value="0.1025" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/ic_bell.xml" value="0.1025" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/ic_home.xml" value="0.1595" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/ic_home_sel.xml" value="0.1595" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/drawable/item_question_list.xml" value="0.15" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_faqpage.xml" value="0.24947916666666667" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_list_major.xml" value="0.4" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_login.xml" value="0.24947916666666667" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_main_page.xml" value="0.24947916666666667" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_major_main.xml" value="0.1578125" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_my_question.xml" value="0.24230072463768115" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_mypage.xml" value="0.264" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_new1.xml" value="0.159375" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_new2.xml" value="0.15989583333333332" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_question_detail.xml" value="0.264" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_question_list.xml" value="0.152" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_register_first.xml" value="0.264" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_register_second.xml" value="0.176" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_selectlogin.xml" value="0.15989583333333332" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_start.xml" value="0.159375" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/activity_writing_question.xml" value="0.264" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/item_answer_recycle.xml" value="0.21510416666666668" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/item_main_recycle.xml" value="0.176" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/item_my_question.xml" value="0.24230072463768115" />
+        <entry key="..\:/1_otcroz/millennium baby/front-end/millennium-baby/app/src/main/res/layout/item_question_recycle.xml" value="0.2" />
+        <entry key="..\:/front-end/millennium-baby/app/src/main/res/drawable/selectlogin_button.xml" value="0.255" />
+        <entry key="..\:/front-end/millennium-baby/app/src/main/res/layout/activity_new1.xml" value="0.21739130434782608" />
+        <entry key="..\:/front-end/millennium-baby/app/src/main/res/layout/activity_new2.xml" value="0.21739130434782608" />
+        <entry key="..\:/front-end/millennium-baby/app/src/main/res/layout/activity_selectlogin.xml" value="0.264" />
+>>>>>>> 4199e6b1c94dc0cc37f6ad8b8ec33aec6f7cc761
       </map>
     </option>
   </component>
